@@ -47,4 +47,6 @@ const addPlacement = async (data) => {
   return { id: result.insertId }; // You can fetch the row if needed
 };
 
+
+
 module.exports = { addPlacement };
