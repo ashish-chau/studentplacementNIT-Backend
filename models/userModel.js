@@ -5,7 +5,7 @@ exports.findByMobile = async (mobile) => {
   return rows[0];
 };
 
-exports.insertUser = async (mobile, password) => {
+exports.insertUser = async ( mobile, password) => {
   const [result] = await db.execute('INSERT INTO users (mobile, password) VALUES (?, ?)', [mobile, password]);
   return result;
 };
